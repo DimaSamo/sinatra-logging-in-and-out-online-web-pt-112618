@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/login' do
-    # @user=User.find_by(name: params[:username])
+     @user=User.find_by(username: params[:username])
      binding.pry
   end
 
